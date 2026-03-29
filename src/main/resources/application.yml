@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: cc-ai-agent
+  server:
+    port: 8123
+  mvc:
+    servlet:
+      path: /api
+
+# Knife4j/Swagger 配置
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+  default-flat-param-object: true
+knife4j:
+  enable: true
+  setting:
+    language: zh-CN
+    # 开启生产环境屏蔽
+    production: false
+    # 开启增强配置
+    swagger-model-name: 实体类列表
+    swagger-api-model-name: API 文档列表
+  basic:
+    enable: false  # 是否开启 Basic 认证
+    username: admin
+    password: admin
