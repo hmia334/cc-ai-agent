@@ -1,6 +1,10 @@
 spring:
   application:
     name: cc-ai-agent
+  # 引入 application-local.yml 文件
+  profiles:
+    active: local
+
 server:
   # 指定项目启动的端口号
   port: 8123
